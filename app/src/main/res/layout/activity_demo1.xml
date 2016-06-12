@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.chan.coordinatorbehaviordemo.Demo1Activity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:background="#0000ff"
+        android:text="TV1"/>
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:padding="20dp"
+        app:layout_behavior="com.chan.coordinatorbehaviordemo.behavior.SimpleBehavior1"
+        android:layout_gravity="right|top"
+        android:background="#00ff00"
+        android:text="TV2"/>
+
+</android.support.design.widget.CoordinatorLayout>
